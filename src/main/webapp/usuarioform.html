@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1"> 
+</head>
+
+<h1>Cadastrar novo consumo</h1>
+
+
+<form action="addusuario.jsp" method="post">
+    <table>
+        <tr>
+            <td>Tipo de energia:</td>
+            <td>
+                <select name="tipoEnergia">
+                    <option value="Carvao">Carv&atildeo</option>
+                    <option value="Energia Hidreletrica">Energia Hidrel&eacutetrica</option>
+                    <option value="Eolica">E&oacutelica</option>
+                    <option value="Gas Natural">G&aacutes Natural</option>
+                    <option value="Oleo">&Oacuteleo</option>
+                    <option value="Solar">Solar</option>
+                    <option value="Petroleo">Petroacuteleo</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Quantidade:</td>
+            <td><input type="number" name="quantidade"/></td>
+        </tr>
+
+        <tr>
+            <td>Data:</td>
+            <td><input type="date" name="data"/></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> 
+                <input type="submit" value="Cadastrar">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</html>

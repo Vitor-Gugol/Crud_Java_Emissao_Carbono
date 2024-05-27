@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="Style.css">
 <title>Visualização de Usuários</title>
 </head>
 <body>
@@ -13,13 +14,18 @@
 	
 	<h1>Energias</h1>
 	
+	<br>
+	<a href="addusuarioform.jsp" class="add">Adicionar novo usuário </a>
+	<br>
+	
+	
 	<%
 		List<Usuario> list = consumoDao.getAllUsuarios();
 		request.setAttribute("list", list);
 		%>
 	
-	<table border="1">
-		<tr> 
+	<table class="table">
+		<tr class="tableHeader"> 
 		<th>Tipo de energia</th>
 		<th>Quantidade</th>
 		<th>Data</th>
@@ -37,8 +43,6 @@
             </tr>
         </c:forEach>
 	</table>
-	<br>
-	<a href="addusuarioform.jsp">Adicionar novo Usuário </a>
 	
 	
 	

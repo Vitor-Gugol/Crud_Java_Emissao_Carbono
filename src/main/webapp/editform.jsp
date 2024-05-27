@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="Style.css">
 <title>Edição do usuário</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <form action="editusuario.jsp" method="post">
         <table>
             <tr>
-                <td>Tipo de energia:</td>
+                <td class="titleInput">Tipo de energia:</td>
                 <td>
                     <select name="tipoEnergia">
                         <option value="Carvão" <%= usuario.getTipoEnergia().equals("Carvão") ? "selected" : "" %>>Carvão</option>
@@ -29,11 +30,11 @@
                 </td>
             </tr>
             <tr>
-                <td>Quantidade:</td>
+                <td class="titleInput">Quantidade:</td>
                 <td><input type="number" name="quantidade" value="<%=usuario.getQuantidade()%>"/> </td>
             </tr>
             <tr>
-                <td>Data: </td>
+                <td class="titleInput">Data: </td>
                 <td><input type="date" name="data" value="<%=usuario.getData()%>"/> </td>
             </tr>
             <tr>
